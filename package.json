@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc --build",
     "test": "jest --no-cache",
-    "lint": "eslint \"**/*.{ts,tsx}\""
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.15.0",
