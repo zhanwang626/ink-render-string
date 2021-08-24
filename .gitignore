@@ -1,0 +1,6 @@
+*-debug.log
+*-error.log
+/lib
+node_modules
+.eslintcache
+.vscode
