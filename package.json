@@ -1,6 +1,6 @@
 {
   "name": "ink-render-string",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Render string for ink components",
   "main": "lib/index.js",
   "repository": "https://github.com/zhanwang626/ink-render-string.git",
