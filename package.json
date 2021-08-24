@@ -36,5 +36,8 @@
   "dependencies": {
     "events": "^3.3.0",
     "ink": "^3.0.9"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
