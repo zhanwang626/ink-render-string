@@ -1,6 +1,6 @@
 {
   "name": "ink-render-string",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Render string for ink components",
   "main": "lib",
   "types": "lib/index.d.ts",
