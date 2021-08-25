@@ -1,8 +1,9 @@
 {
   "name": "ink-render-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Render string for ink components",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/zhanwang626/ink-render-string.git",
   "author": "Zhan Wang <wwzzvin626@gmail.com>",
   "license": "MIT",
