@@ -1,18 +1,8 @@
 {
+    "extends": "@sindresorhus/tsconfig",
     "compilerOptions": {
         "outDir": "lib",
-        "jsx": "react",
-        "rootDir": "src",
-        "composite": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "importHelpers": true,
-        "module": "commonjs",
-        "strict": true,
-        "target": "es2019",
-        "allowSyntheticDefaultImports": true,
-        "typeRoots": ["node_modules/@types"]
+        "sourceMap": true
     },
     "include": ["src/**/*"]
 }

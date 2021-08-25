@@ -1,8 +1,8 @@
 {
   "name": "ink-render-string",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Render string for ink components",
-  "main": "lib/index.js",
+  "main": "lib",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/zhanwang626/ink-render-string.git",
   "author": "Zhan Wang <wwzzvin626@gmail.com>",
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.15.0",
+    "@sindresorhus/tsconfig": "^1.0.2",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
