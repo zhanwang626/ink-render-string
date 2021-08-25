@@ -24,6 +24,9 @@ export const render = (tree: ReactElement): string => {
 
   inkRender(tree, {
     stdout: stdout as any,
+    debug: true,
+    exitOnCtrlC: false,
+    patchConsole: false,
   });
 
   return stdout.lastFrame() || LASTFRAME_UNDEFINED
