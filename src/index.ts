@@ -13,7 +13,7 @@ interface Instance {
 
 const LASTFRAME_UNDEFINED = 'value of stdout.lastframe() is undefined';
 
-class OutputStream extends EventEmitter {
+export class OutputStream extends EventEmitter {
   readonly frames: string[] = [];
   private _lastFrame?: string;
 
