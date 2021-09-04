@@ -4,17 +4,30 @@ ink-render-string provides a render function which will return a string, which i
 
 ## Install
 
-```shell
+```bash
 yarn add ink-render-string
 ```
 
 ## Usage
+
 ```tsx
 import { render } from 'ink-render-string';
-import {Text} from 'ink';
+import { Text } from 'ink';
 
 const Component = () => <Text>Hello World</Text>;
 
-const result = render(<Component />);
-result.includes('Hello World') //=> true
+const { output, cleanup } = render(<Component />);
+output.includes('Hello World'); //=> true
+
+cleanup(); // cleans up outstanding render resources
 ```
+
+The `render` function also returns a number of other instance properties:
+
+- `output`: the rendered output
+- `cleanup`: a function which cleans up outstanding render resources
+- `unmount`: a function which unmounts the component
+- `stdout`: the original stdout
+- `stderr`: the original stderr
+- `exitCode`: the original exit code
+- `frames`: an array of rendered frames
