@@ -9,7 +9,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --build",
-    "test": "jest --no-cache",
+    "test": "yarn lint && jest --no-cache",
     "lint": "eslint ."
   },
   "dependencies": {
