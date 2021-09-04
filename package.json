@@ -5,11 +5,11 @@
   "repository": "https://github.com/zhanwang626/ink-render-string.git",
   "license": "MIT",
   "author": "Zhan Wang <wwzzvin626@gmail.com>",
-  "main": "lib",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --build",
-    "test": "jest --no-cache",
+    "test": "yarn lint && jest --no-cache",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -38,7 +38,7 @@
     "typescript": "^4.3.5"
   },
   "engines": {
-    "node": ">= 12.11.*"
+    "node": ">= 12.22.*"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -57,5 +57,9 @@
       "release": true,
       "tokenRef": "GITHUB_AUTH"
     }
+  },
+  "volta": {
+    "node": "12.22.6",
+    "yarn": "1.22.11"
   }
 }

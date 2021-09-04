@@ -1,12 +1,40 @@
-import * as React from "react";
-import { Text } from "ink";
-import { render } from "../src/index";
+import * as React from 'react';
+import { Text } from 'ink';
+import { OutputStream, render } from '../src/index';
 
-describe("Test ink render string", () => {
-  it("render API can return string", () => {
+describe('ink-render-string', () => {
+  it('render API can return rendered output', () => {
     const Test = () => <Text>Hello World</Text>;
-    const result = render(<Test />);
+    const { output, cleanup } = render(<Test />);
 
-    expect(result).toContain(`Hello World`);
+    expect(output).toEqual('Hello World');
+
+    cleanup();
+  });
+
+  it('returns instance properties', () => {
+    const Test = () => (
+      <>
+        <Text>Hello World</Text>
+        <Text>Goodbye, cruel world!</Text>
+      </>
+    );
+    const { output, cleanup, frames, stdout, stderr, unmount } = render(
+      <Test />
+    );
+
+    expect(output).toEqual(`Hello World
+Goodbye, cruel world!`);
+    expect(frames).toMatchInlineSnapshot(`
+      Array [
+        "Hello World
+      Goodbye, cruel world!",
+      ]
+    `);
+    expect(unmount).toBeInstanceOf(Function);
+    expect(stdout).toBeInstanceOf(OutputStream);
+    expect(stderr).toBeInstanceOf(OutputStream);
+
+    cleanup();
   });
 });
