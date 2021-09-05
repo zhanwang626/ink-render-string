@@ -1,6 +1,6 @@
 {
   "name": "ink-render-string",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Render string for ink components",
   "repository": "https://github.com/zhanwang626/ink-render-string.git",
   "license": "MIT",
