@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import * as React from 'react';
 import { Text } from 'ink';
 import { OutputStream, render } from '../src/index';
@@ -26,7 +27,7 @@ describe('ink-render-string', () => {
     expect(output).toEqual(`Hello World
 Goodbye, cruel world!`);
     expect(frames).toMatchInlineSnapshot(`
-      Array [
+      [
         "Hello World
       Goodbye, cruel world!",
       ]
