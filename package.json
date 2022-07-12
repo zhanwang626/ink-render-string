@@ -9,6 +9,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --build",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn build",
     "test": "yarn lint && jest --no-cache",
     "lint": "eslint ."
   },
